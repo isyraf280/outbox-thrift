@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Up Gaya Kamu - Outbox Thrift</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        /* Specific page background based on design 2 */
+        body {
+            background: linear-gradient(to bottom, #F6C94F 0%, #EBB644 30%, #9DB0A3 70%, #5D83A6 100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container" style="min-height: 100vh; display: flex; flex-direction: column;">
+        <!-- Header -->
+        <header>
+            <button class="icon-btn rounded" onclick="window.location.href='index.html'">
+                <i data-feather="arrow-left"></i>
+            </button>
+            <button class="icon-btn">
+                <i data-feather="shopping-cart"></i>
+            </button>
+        </header>
+
+        <!-- Page Header -->
+        <div class="page-header">
+            <h1>JACKET</h1>
+            <h2>SET UP GAYA KAMU</h2>
+        </div>
+
+        <!-- Setup Grid -->
+        <div class="setup-grid" id="setup-grid">
+            <div class="setup-item">
+                <img src="assets/jacket1.png" alt="Jacket Style 1">
+            </div>
+            <div class="setup-item">
+                <img src="assets/jacket2.png" alt="Jacket Style 2">
+            </div>
+            <div class="setup-item">
+                <img src="assets/knitwear.png" alt="Jacket Style 3">
+            </div>
+            <div class="setup-item">
+                <img src="assets/jacket1.png" alt="Jacket Style 4">
+            </div>
+            <div class="setup-item">
+                <img src="assets/jacket2.png" alt="Jacket Style 5">
+            </div>
+            <div class="setup-item selected">
+                <img src="assets/knitwear.png" alt="Jacket Style 6">
+            </div>
+            <div class="setup-item">
+                <img src="assets/jacket1.png" alt="Jacket Style 7">
+            </div>
+            <div class="add-new-style">
+                ADD NEW STYLE
+            </div>
+        </div>
+
+        <p style="text-align: center; font-size: 12px; margin-bottom: 200px; font-weight: 500;">
+            Tap to select multiple
+        </p>
+
+        <!-- Footer -->
+        <div class="setup-footer">
+            <p>Pilih style yang paling menggambarkan kamu</p>
+            <button class="btn-secondary" onclick="window.location.href='index.html'">KEMBALI</button>
+            <button class="btn-outline">SELANJUTNYA</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>

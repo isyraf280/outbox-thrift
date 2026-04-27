@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outbox Thrift</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header>
+            <div class="header-left">
+                <i data-feather="package"></i>
+                <span>Outbox Thrift</span>
+            </div>
+            <div class="header-nav">
+                <a href="#"><i data-feather="shopping-bag" style="width: 16px; height: 16px;"></i> Nitip jual</a>
+                <a href="#"><i data-feather="shopping-cart" style="width: 16px; height: 16px;"></i> Belanja</a>
+            </div>
+            <button class="icon-btn">
+                <i data-feather="user"></i>
+            </button>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="assets/hero.png" alt="Thrift Clothes Rack">
+            <div class="hero-overlay">
+                <h1>Hello! We welcome<br>to Outbox Thrift</h1>
+                <p>collection of out box thrift</p>
+                <button class="login-btn">
+                    Login
+                    <small>Email</small>
+                </button>
+            </div>
+        </section>
+
+        <!-- Product Categories -->
+        <h2 class="section-title">Product Categories</h2>
+        <div class="categories-grid">
+            <div class="category-item">
+                <div class="category-icon">
+                    <img src="https://api.iconify.design/ph:sneaker-light.svg" alt="Sepatu">
+                </div>
+                <span>Sepatu</span>
+            </div>
+            <div class="category-item">
+                <div class="category-icon">
+                    <img src="https://api.iconify.design/ph:pants-light.svg" alt="Jeans">
+                </div>
+                <span>Jeans</span>
+            </div>
+            <div class="category-item">
+                <div class="category-icon">
+                    <img src="https://api.iconify.design/ph:t-shirt-light.svg" alt="Auther">
+                </div>
+                <span>Auther</span>
+            </div>
+            <div class="category-item" onclick="window.location.href='category.html'">
+                <div class="category-icon">
+                    <img src="https://api.iconify.design/ph:coat-hanger-light.svg" alt="Jacket">
+                </div>
+                <span>Jacket</span>
+            </div>
+        </div>
+
+        <!-- Staff Picks -->
+        <h2 class="section-title">Staff Picks</h2>
+        <div class="staff-picks-grid" onclick="window.location.href='staff-picks.html'" style="cursor: pointer;">
+            <!-- Item 1 -->
+            <div class="staff-pick-item">
+                <div class="staff-pick-image">
+                    <img src="assets/knitwear.png" alt="Jacket">
+                </div>
+                <div class="title">Jacket</div>
+                <div class="price">Rp. 180.000</div>
+                <button class="view-btn">View</button>
+            </div>
+            <!-- Item 2 -->
+            <div class="staff-pick-item">
+                <div class="staff-pick-image">
+                    <img src="assets/jacket1.png" alt="Jacket">
+                </div>
+                <div class="title">Jacket</div>
+                <div class="price">Rp. 180.000</div>
+                <button class="view-btn">View</button>
+            </div>
+            <!-- Item 3 -->
+            <div class="staff-pick-item">
+                <div class="staff-pick-image">
+                    <img src="assets/jacket2.png" alt="Jacket">
+                </div>
+                <div class="title">Jacket</div>
+                <div class="price">Rp. 180.000</div>
+                <button class="view-btn">View</button>
+            </div>
+            <!-- Item 4 -->
+            <div class="staff-pick-item">
+                <div class="staff-pick-image">
+                    <img src="assets/knitwear.png" alt="Jacket">
+                </div>
+                <div class="title">Jacket</div>
+                <div class="price">Rp. 180.000</div>
+                <button class="view-btn">View</button>
+            </div>
+        </div>
+
+        <!-- Coming Soon -->
+        <button class="coming-soon-btn">Coming Soon</button>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>

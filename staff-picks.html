@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Picks - Outbox Thrift</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        /* Specific page background based on design 3 */
+        body {
+            background: linear-gradient(to bottom, #F6C94F 0%, #EBB644 20%, #9DB0A3 60%, #5D83A6 100%);
+        }
+        
+        .page-header-simple {
+            text-align: center;
+            margin: 24px 0 32px;
+        }
+
+        .page-header-simple h1 {
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container" style="min-height: 100vh; display: flex; flex-direction: column; position: relative;">
+        <!-- Header -->
+        <header>
+            <button class="icon-btn" onclick="window.location.href='index.html'">
+                <i data-feather="home"></i>
+            </button>
+        </header>
+
+        <!-- Page Header -->
+        <div class="page-header-simple">
+            <h1>STAFF PICKS</h1>
+        </div>
+
+        <!-- Custom Cursor Demo (from design) -->
+        <div class="custom-cursor">
+            <img src="https://api.iconify.design/ph:cursor-fill.svg?color=%23E25046" alt="cursor">
+            <div class="cursor-label">isyraf fauzan_35</div>
+        </div>
+
+        <!-- Staff Picks Grid -->
+        <div class="staff-picks-detail-grid">
+            <!-- Item 1 -->
+            <div class="detail-card">
+                <div class="detail-card-inner">
+                    <img src="assets/knitwear.png" alt="Crewnek">
+                </div>
+                <div class="detail-info">
+                    <div class="title">Crewnek</div>
+                    <div class="price">Rp. 120.000</div>
+                    <button class="buy-now-btn">Beli Sekarang</button>
+                </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="detail-card">
+                <div class="detail-card-inner">
+                    <img src="assets/jacket1.png" alt="Denim">
+                </div>
+                <div class="detail-info">
+                    <div class="title">Denim</div>
+                    <div class="price">Rp. 70.000</div>
+                    <button class="buy-now-btn">Beli Sekarang</button>
+                </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="detail-card">
+                <div class="detail-card-inner">
+                    <img src="assets/jacket2.png" alt="Denim">
+                </div>
+                <div class="detail-info">
+                    <div class="title">Denim</div>
+                    <div class="price">Rp. 70.000</div>
+                    <button class="buy-now-btn">Beli Sekarang</button>
+                </div>
+            </div>
+            <!-- Item 4 -->
+            <div class="detail-card">
+                <div class="detail-card-inner">
+                    <img src="assets/knitwear.png" alt="Denim">
+                </div>
+                <div class="detail-info">
+                    <div class="title">Rp. 70.000</div>
+                    <div class="price">Rp. 70.000</div>
+                    <button class="buy-now-btn">Beli Sekarang</button>
+                </div>
+            </div>
+            <!-- Item 5 -->
+            <div class="detail-card">
+                <div class="detail-card-inner">
+                    <img src="assets/jacket1.png" alt="Denim">
+                </div>
+                <div class="detail-info">
+                    <div class="title">Denim</div>
+                    <div class="price">Rp. 70.000</div>
+                    <button class="buy-now-btn">Beli Sekarang</button>
+                </div>
+            </div>
+            <!-- Item 6 -->
+            <div class="detail-card">
+                <div class="detail-card-inner">
+                    <img src="assets/jacket2.png" alt="Denim">
+                </div>
+                <div class="detail-info">
+                    <div class="title">Denim</div>
+                    <div class="price">Rp. 70.000</div>
+                    <button class="buy-now-btn">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
