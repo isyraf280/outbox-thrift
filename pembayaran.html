@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilih Pembayaran - Outbox Thrift</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <div class="page-header-alt">
+            <button class="back-btn" onclick="window.history.back()">
+                <i data-feather="arrow-left"></i>
+            </button>
+            <h1>PILIH PEMBAYARAN</h1>
+            <div class="header-icon"></div>
+        </div>
+
+        <!-- Payment Methods -->
+        <div class="payment-methods" style="flex: 1;">
+            
+            <!-- Virtual Account -->
+            <div class="payment-card">
+                <div class="payment-logos">
+                    <div class="payment-logo-item" style="color: #005E6A; font-weight: 800; font-size: 20px; font-style: italic;">BCA</div>
+                    <div class="payment-logo-item" style="color: #00529C; font-weight: 800; font-size: 20px;">BRI</div>
+                    <div class="payment-logo-item" style="background-color: #00A3E0; color: white; padding: 4px 8px; border-radius: 8px; font-weight: 700; font-size: 14px; font-style: italic;">livin'</div>
+                </div>
+                <div class="payment-card-title">Virtual Account (VA)</div>
+            </div>
+
+            <!-- E-Wallet -->
+            <div class="payment-card">
+                <div class="payment-logos">
+                    <div class="payment-logo-item">
+                        <img src="https://api.iconify.design/ph:wallet-fill.svg?color=%2300c4cc" alt="Wallet">
+                    </div>
+                    <div class="payment-logo-item" style="background-color: #4C3494; color: white; padding: 4px 12px; border-radius: 8px; font-weight: 700; font-size: 16px;">OVO</div>
+                    <div class="payment-logo-item" style="color: #118EEA; font-weight: 800; font-size: 18px;">DANA</div>
+                </div>
+                <div class="payment-card-title">E-Wallet</div>
+            </div>
+
+            <!-- Transfer Manual -->
+            <div class="payment-card">
+                <div class="payment-logos">
+                    <div class="payment-logo-item">
+                        <img src="https://api.iconify.design/ph:bank-light.svg?color=%23555" alt="Bank" style="height: 32px;">
+                    </div>
+                </div>
+                <div class="payment-card-title">Transfer Manual</div>
+            </div>
+
+            <!-- Bayar di Tempat -->
+            <div class="payment-card">
+                <div class="payment-logos">
+                    <div class="payment-logo-item" style="background-color: #E25046; color: white; padding: 4px 12px; border-radius: 8px; font-weight: 800; font-size: 16px;">COD</div>
+                </div>
+                <div class="payment-card-title">Bayar di Tempat</div>
+            </div>
+
+        </div>
+
+        <div style="padding-bottom: 20px;">
+            <a href="index.html" class="btn-primary">BAYAR SEKARANG</a>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
