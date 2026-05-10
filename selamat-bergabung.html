@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Bergabung - Outbox Thrift</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</head>
+<body>
+    <div class="app-container" style="display: flex; flex-direction: column; min-height: 100vh;">
+        <!-- Top Section -->
+        <div style="padding: 20px; flex: 1; display: flex; flex-direction: column; align-items: center;">
+            <div style="width: 100%; display: flex; justify-content: flex-start; margin-bottom: 16px;">
+                <button class="back-btn" onclick="window.history.back()" style="background: rgba(255, 255, 255, 0.5); border: none; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.3s ease;">
+                    <i data-feather="arrow-left"></i>
+                </button>
+            </div>
+            
+            <h1 style="font-size: 18px; font-weight: 700; margin-bottom: 16px; text-align: center; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px; line-height: 1.4;">
+                SELAMAT BERGABUNG DI<br>THRIFT HUB!
+            </h1>
+            
+            <p style="font-size: 13px; text-align: center; margin-bottom: 24px; color: var(--text-dark); line-height: 1.5; font-weight: 600;">
+                Selamat! Pesanan Anda telah selesai.<br>
+                (Tiba pada 20/04/26. kami harap<br>
+                Anda menyukainya.
+            </p>
+
+            <!-- Community Card -->
+            <div style="background-color: #EBEBEB; border-radius: 12px; padding: 20px; width: 100%; margin-bottom: 24px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+                <p style="font-size: 12px; font-weight: 600; line-height: 1.5; margin-bottom: 20px;">
+                    Gabung Komunitas Kami!<br>
+                    Dapatkan Info promo, tips styling, dan<br>
+                    bagikan OOTD thrift kamu!
+                </p>
+                <div style="display: flex; justify-content: space-around; align-items: center; padding: 0 20px;">
+                    <a href="https://chat.whatsapp.com/invitecode" target="_blank" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; align-items: center; gap: 8px; cursor: pointer; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                        <iconify-icon icon="logos:whatsapp-icon" width="48" height="48"></iconify-icon>
+                        <span style="font-size: 12px; font-weight: 600; font-family: 'Times New Roman', Times, serif;">Grup WhatsApp</span>
+                    </a>
+                    <a href="https://instagram.com/outboxthrift" target="_blank" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; align-items: center; gap: 8px; cursor: pointer; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                        <iconify-icon icon="skill-icons:instagram" width="48" height="48"></iconify-icon>
+                        <span style="font-size: 12px; font-weight: 600; font-family: 'Times New Roman', Times, serif;">Instagram</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Card Section -->
+        <div class="confirmation-card" style="background-color: #EBEBEB; border-radius: 24px 24px 0 0; padding: 32px 24px; width: 100%; box-shadow: 0 -4px 20px rgba(0,0,0,0.05);">
+            <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px;">
+                <a href="#" class="btn-primary" style="padding: 14px; font-size: 13px;">GABUNG KOMUNITAS SEKARANG</a>
+                <a href="beri-ulasan.html" class="btn-primary" style="padding: 14px; font-size: 13px;">BERI ULASAN BARANG</a>
+                <a href="index.html" class="btn-secondary" style="background-color: #D9D9D9; color: var(--text-dark); text-align: center; text-decoration: none; display: block; width: 100%; padding: 14px; border-radius: 24px; font-weight: 600; font-size: 13px; margin-bottom: 0;">BERANDA</a>
+            </div>
+
+            <p style="text-align: center; font-size: 12px; line-height: 1.5; color: var(--text-dark); font-weight: 600; font-family: 'Times New Roman', Times, serif;">
+                Dukungan Anda berarti dunia<br>
+                bagi kami. Terima kasih telah<br>
+                mendukung UMKM
+            </p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>

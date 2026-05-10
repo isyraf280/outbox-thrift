@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesanan Terkonfirmasi - Outbox Thrift</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</head>
+<body>
+    <div class="app-container" style="display: flex; flex-direction: column; min-height: 100vh;">
+        <!-- Top Section -->
+        <div style="padding: 20px; flex: 1; display: flex; flex-direction: column; align-items: center;">
+            <div style="width: 100%; display: flex; justify-content: flex-start; margin-bottom: 20px;">
+                <button class="back-btn" onclick="window.history.back()" style="background: rgba(255, 255, 255, 0.5); border: none; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.3s ease;">
+                    <i data-feather="arrow-left"></i>
+                </button>
+            </div>
+            
+            <h1 style="font-size: 18px; font-weight: 700; margin-bottom: 24px; text-align: center; font-family: 'Times New Roman', Times, serif; letter-spacing: 1px;">PESANAN TERKONFIRMASI</h1>
+            
+            <div style="position: relative; margin-bottom: 24px;">
+                <!-- Icon container -->
+                <div style="width: 90px; height: 90px; display: flex; align-items: center; justify-content: center; position: relative;">
+                    <iconify-icon icon="twemoji:shopping-bags" style="font-size: 90px;"></iconify-icon>
+                    <div style="position: absolute; bottom: 0; right: 0; background: #62C471; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; border: 3px solid rgba(255,255,255,0.2);">
+                        <i data-feather="check" style="color: white; width: 22px; height: 22px; stroke-width: 3;"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <p style="font-weight: 600; font-size: 14px; margin-bottom: 12px; color: var(--text-dark);">Terima Kasih, Ali Haedar!</p>
+            <p style="font-size: 14px; text-align: center; margin-bottom: 20px; color: var(--text-dark); line-height: 1.5; font-weight: 500;">Pesanan Anda telah<br>diterima.</p>
+        </div>
+
+        <!-- Bottom Card Section -->
+        <div class="confirmation-card" style="background-color: #EBEBEB; border-radius: 24px 24px 0 0; padding: 24px 24px 32px 24px; width: 100%; box-shadow: 0 -4px 20px rgba(0,0,0,0.05);">
+            <div style="text-align: right; font-size: 13px; font-weight: 600; margin-bottom: 6px; color: var(--text-dark);">#TFT12345</div>
+            <div style="text-align: right; font-size: 13px; margin-bottom: 16px; color: var(--text-dark); font-weight: 500;">April 18 - 20,2026</div>
+            
+            <div style="border-top: 1px solid rgba(0,0,0,0.15); margin-bottom: 20px;"></div>
+            
+            <div style="display: flex; flex-direction: column; gap: 20px; margin-bottom: 28px;">
+                <!-- Item 1 -->
+                <div>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                        <span style="font-weight: 600; font-size: 13px;">SWEATER</span>
+                        <span style="font-weight: 600; font-size: 13px;">Rp 110.000</span>
+                    </div>
+                    <div style="font-size: 13px; color: var(--text-dark); font-weight: 500;">Rp 110.000</div>
+                </div>
+                <!-- Item 2 -->
+                <div>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                        <span style="font-weight: 600; font-size: 13px;">KNIT WEAR</span>
+                        <span style="font-weight: 600; font-size: 13px;">Rp 120.000</span>
+                    </div>
+                    <div style="font-size: 13px; color: var(--text-dark); font-weight: 500;">Rp 120.000</div>
+                </div>
+            </div>
+            
+            <div style="display: flex; justify-content: space-between; margin-bottom: 20px; font-weight: 600; font-size: 13px;">
+                <span>Shopping Ongkir</span>
+                <div style="text-align: right;">
+                    <div style="margin-bottom: 4px;">Rp 230.000</div>
+                    <div>-Rp 30.000</div>
+                </div>
+            </div>
+            
+            <div style="border-top: 1px solid rgba(0,0,0,0.15); margin-bottom: 20px;"></div>
+            
+            <div style="text-align: right; font-weight: 700; font-size: 15px; margin-bottom: 32px;">
+                Rp 200.000
+            </div>
+            
+            <a href="status-pesanan.html" class="btn-primary" style="margin-bottom: 16px;">LIHAT STATUS PESANAN</a>
+            <a href="index.html" class="btn-secondary" style="background-color: #D9D9D9; color: var(--text-dark); text-align: center; text-decoration: none; display: block; width: 100%; padding: 12px; border-radius: 24px; font-weight: 600; font-size: 14px; transition: var(--transition);">BELANJA LAGI</a>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
