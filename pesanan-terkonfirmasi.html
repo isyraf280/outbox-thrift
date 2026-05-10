@@ -7,60 +7,96 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <style>
+        .serif-text {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .btn-custom {
+            font-family: 'Times New Roman', Times, serif;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 24px;
+            padding: 16px;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-decoration: none;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <div class="app-container" style="display: flex; flex-direction: column; min-height: 100vh;">
         <!-- Top Section -->
-        <div style="padding: 20px; flex: 1; display: flex; flex-direction: column; align-items: center;">
-            <div style="width: 100%; display: flex; justify-content: flex-start; margin-bottom: 20px;">
-                <button class="back-btn" onclick="window.history.back()" style="background: rgba(255, 255, 255, 0.5); border: none; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.3s ease;">
-                    <i data-feather="arrow-left"></i>
+        <div style="padding: 24px; flex: 1; display: flex; flex-direction: column; align-items: center;">
+            <div style="width: 100%; display: flex; align-items: center; position: relative; margin-bottom: 30px;">
+                <button class="back-btn" onclick="window.history.back()" style="background: rgba(255, 255, 255, 0.4); border: none; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.3s ease; position: absolute; left: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                    <i data-feather="arrow-left" style="width: 20px; height: 20px; color: #333;"></i>
                 </button>
+                <h1 class="serif-text" style="font-size: 20px; font-weight: 700; text-align: center; width: 100%; margin: 0; letter-spacing: 0.5px; color: #1C1C1C;">PESANAN TERKONFIRMASI</h1>
             </div>
             
-            <h1 style="font-size: 18px; font-weight: 700; margin-bottom: 24px; text-align: center; font-family: 'Times New Roman', Times, serif; letter-spacing: 1px;">PESANAN TERKONFIRMASI</h1>
-            
-            <div style="position: relative; margin-bottom: 24px;">
-                <!-- Icon container -->
-                <div style="width: 90px; height: 90px; display: flex; align-items: center; justify-content: center; position: relative;">
-                    <iconify-icon icon="twemoji:shopping-bags" style="font-size: 90px;"></iconify-icon>
-                    <div style="position: absolute; bottom: 0; right: 0; background: #62C471; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; border: 3px solid rgba(255,255,255,0.2);">
-                        <i data-feather="check" style="color: white; width: 22px; height: 22px; stroke-width: 3;"></i>
+            <div style="position: relative; margin-bottom: 24px; display: flex; justify-content: center;">
+                <div style="width: 110px; height: 110px; position: relative; display: flex; align-items: center; justify-content: center;">
+                    <!-- Custom SVG Bag -->
+                    <svg width="80" height="90" viewBox="0 0 80 90" fill="none" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.1));">
+                        <!-- Handle -->
+                        <path d="M 28 35 V 22 C 28 10 52 10 52 22 V 35" stroke="#62C471" stroke-width="6" fill="none" stroke-linecap="round"/>
+                        <!-- Bag Body -->
+                        <g clip-path="url(#bag-clip)">
+                            <!-- Dark Yellow Left -->
+                            <rect x="10" y="25" width="30" height="60" fill="#EBB644"/>
+                            <!-- Light Yellow Right -->
+                            <rect x="40" y="25" width="30" height="60" fill="#F8C94F"/>
+                        </g>
+                        <defs>
+                            <clipPath id="bag-clip">
+                                <rect x="10" y="25" width="60" height="60" rx="6"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                    <!-- Green Checkmark Circle -->
+                    <div style="position: absolute; bottom: 5px; right: 0px; background: #62C471; border-radius: 50%; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">
+                        <i data-feather="check" style="color: white; width: 26px; height: 26px; stroke-width: 4;"></i>
                     </div>
                 </div>
             </div>
             
-            <p style="font-weight: 600; font-size: 14px; margin-bottom: 12px; color: var(--text-dark);">Terima Kasih, Ali Haedar!</p>
-            <p style="font-size: 14px; text-align: center; margin-bottom: 20px; color: var(--text-dark); line-height: 1.5; font-weight: 500;">Pesanan Anda telah<br>diterima.</p>
+            <p class="serif-text" style="font-weight: 600; font-size: 15px; margin-bottom: 12px; color: var(--text-dark);">Terima Kasih, Ali Haedar!</p>
+            <p class="serif-text" style="font-size: 15px; text-align: center; margin-bottom: 20px; color: var(--text-dark); line-height: 1.6; font-weight: 600;">Pesanan Anda telah<br>diterima.</p>
         </div>
 
         <!-- Bottom Card Section -->
-        <div class="confirmation-card" style="background-color: #EBEBEB; border-radius: 24px 24px 0 0; padding: 24px 24px 32px 24px; width: 100%; box-shadow: 0 -4px 20px rgba(0,0,0,0.05);">
-            <div style="text-align: right; font-size: 13px; font-weight: 600; margin-bottom: 6px; color: var(--text-dark);">#TFT12345</div>
-            <div style="text-align: right; font-size: 13px; margin-bottom: 16px; color: var(--text-dark); font-weight: 500;">April 18 - 20,2026</div>
+        <div class="confirmation-card serif-text" style="background-color: #EEEEEE; border-radius: 24px 24px 0 0; padding: 32px 24px 40px; width: 100%; box-shadow: 0 -4px 20px rgba(0,0,0,0.05);">
+            <div style="text-align: right; font-size: 14px; font-weight: 600; margin-bottom: 8px; color: var(--text-dark);">#TFT12345</div>
+            <div style="text-align: right; font-size: 14px; margin-bottom: 20px; color: var(--text-dark); font-weight: 600;">April 18 - 20,2026</div>
             
-            <div style="border-top: 1px solid rgba(0,0,0,0.15); margin-bottom: 20px;"></div>
+            <div style="border-top: 1px solid rgba(0,0,0,0.2); margin-bottom: 24px;"></div>
             
-            <div style="display: flex; flex-direction: column; gap: 20px; margin-bottom: 28px;">
+            <div style="display: flex; flex-direction: column; gap: 20px; margin-bottom: 32px;">
                 <!-- Item 1 -->
                 <div>
-                    <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
-                        <span style="font-weight: 600; font-size: 13px;">SWEATER</span>
-                        <span style="font-weight: 600; font-size: 13px;">Rp 110.000</span>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                        <span style="font-weight: 600; font-size: 14px;">SWEATER</span>
+                        <span style="font-weight: 600; font-size: 14px;">Rp 110.000</span>
                     </div>
-                    <div style="font-size: 13px; color: var(--text-dark); font-weight: 500;">Rp 110.000</div>
+                    <div style="font-size: 14px; color: var(--text-dark); font-weight: 600;">Rp 110.000</div>
                 </div>
                 <!-- Item 2 -->
                 <div>
-                    <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
-                        <span style="font-weight: 600; font-size: 13px;">KNIT WEAR</span>
-                        <span style="font-weight: 600; font-size: 13px;">Rp 120.000</span>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                        <span style="font-weight: 600; font-size: 14px;">KNIT WEAR</span>
+                        <span style="font-weight: 600; font-size: 14px;">Rp 120.000</span>
                     </div>
-                    <div style="font-size: 13px; color: var(--text-dark); font-weight: 500;">Rp 120.000</div>
+                    <div style="font-size: 14px; color: var(--text-dark); font-weight: 600;">Rp 120.000</div>
                 </div>
             </div>
             
-            <div style="display: flex; justify-content: space-between; margin-bottom: 20px; font-weight: 600; font-size: 13px;">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 24px; font-weight: 600; font-size: 14px;">
                 <span>Shopping Ongkir</span>
                 <div style="text-align: right;">
                     <div style="margin-bottom: 4px;">Rp 230.000</div>
@@ -68,14 +104,14 @@
                 </div>
             </div>
             
-            <div style="border-top: 1px solid rgba(0,0,0,0.15); margin-bottom: 20px;"></div>
+            <div style="border-top: 1px solid rgba(0,0,0,0.2); margin-bottom: 24px;"></div>
             
-            <div style="text-align: right; font-weight: 700; font-size: 15px; margin-bottom: 32px;">
+            <div style="text-align: right; font-weight: 700; font-size: 16px; margin-bottom: 40px;">
                 Rp 200.000
             </div>
             
-            <a href="status-pesanan.html" class="btn-primary" style="margin-bottom: 16px;">LIHAT STATUS PESANAN</a>
-            <a href="index.html" class="btn-secondary" style="background-color: #D9D9D9; color: var(--text-dark); text-align: center; text-decoration: none; display: block; width: 100%; padding: 12px; border-radius: 24px; font-weight: 600; font-size: 14px; transition: var(--transition);">BELANJA LAGI</a>
+            <a href="status-pesanan.html" class="btn-custom" style="background-color: #F8C94F; color: var(--text-dark); margin-bottom: 16px;">LIHAT STATUS PESANAN</a>
+            <a href="index.html" class="btn-custom" style="background-color: #D9D9D9; color: var(--text-dark); transition: var(--transition);">BELANJA LAGI</a>
         </div>
     </div>
 
