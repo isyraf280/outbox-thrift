@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Outbox Thrift</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+    <div class="app-container profile-container">
+        <!-- Header -->
+        <header class="profile-header">
+            <button class="icon-btn" onclick="window.location.href='index.html'">
+                <i data-feather="home"></i>
+            </button>
+        </header>
+
+        <div class="profile-content">
+            <h1 class="profile-title serif-text">PROFILE</h1>
+
+            <div class="profile-avatar">
+                <img src="https://api.iconify.design/carbon:user-avatar-filled.svg?color=white" alt="User Avatar">
+            </div>
+
+            <div class="profile-form">
+                <div class="form-group">
+                    <label class="serif-text">NAMA</label>
+                    <input type="text" class="profile-input">
+                </div>
+                <div class="form-group">
+                    <label class="serif-text">NO TELP</label>
+                    <input type="tel" class="profile-input">
+                </div>
+                <div class="form-group">
+                    <label class="serif-text">ALAMAT</label>
+                    <input type="text" class="profile-input">
+                </div>
+                <div class="form-group">
+                    <label class="serif-text">JENIS KELAMIN</label>
+                    <input type="text" class="profile-input">
+                </div>
+                <div class="form-group">
+                    <label class="serif-text">BARANG DIBELI</label>
+                    <input type="text" class="profile-input">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice - Outbox Thrift</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <div class="app-container" style="display: flex; flex-direction: column; min-height: 100vh;">
+        <!-- Header -->
+        <div class="page-header-alt" style="margin-bottom: 20px;">
+            <button class="back-btn" onclick="window.history.back()">
+                <i data-feather="arrow-left"></i>
+            </button>
+            <h1>INVOICE</h1>
+            <div class="header-icon"></div>
+        </div>
+
+        <div style="flex: 1; padding: 0 20px 40px 20px; display: flex; flex-direction: column;">
+            <div style="background: white; border-radius: 20px; padding: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 24px;">
+                    <div>
+                        <h2 style="font-size: 16px; font-weight: 700; margin-bottom: 4px;">Outbox Thrift</h2>
+                        <p style="font-size: 12px; color: var(--text-dark);">Invoice untuk pesanan Anda</p>
+                    </div>
+                    <div style="text-align: right;">
+                        <div style="font-size: 12px; font-weight: 600; margin-bottom: 4px;">#TFT12345</div>
+                        <div style="font-size: 12px; color: var(--text-dark);">14 April 2026</div>
+                    </div>
+                </div>
+
+                <div style="border-top: 1px dashed rgba(0,0,0,0.2); margin-bottom: 20px;"></div>
+
+                <div style="margin-bottom: 24px;">
+                    <h3 style="font-size: 12px; font-weight: 600; margin-bottom: 8px; color: rgba(0,0,0,0.5); text-transform: uppercase;">Ditagihkan kepada</h3>
+                    <p style="font-size: 14px; font-weight: 600; margin-bottom: 4px;">Ali Haedar</p>
+                    <p style="font-size: 12px; color: var(--text-dark); line-height: 1.5;">
+                        Jl. Contoh Alamat No. 123<br>
+                        Jakarta Selatan, 12345<br>
+                        081234567890
+                    </p>
+                </div>
+
+                <div style="border-top: 1px dashed rgba(0,0,0,0.2); margin-bottom: 20px;"></div>
+
+                <h3 style="font-size: 12px; font-weight: 600; margin-bottom: 12px; color: rgba(0,0,0,0.5); text-transform: uppercase;">Detail Pesanan</h3>
+                
+                <div style="display: flex; flex-direction: column; gap: 16px; margin-bottom: 20px;">
+                    <div style="display: flex; justify-content: space-between;">
+                        <div>
+                            <div style="font-size: 13px; font-weight: 600;">SWEATER</div>
+                            <div style="font-size: 12px; color: var(--text-dark);">1 x Rp 110.000</div>
+                        </div>
+                        <div style="font-size: 13px; font-weight: 600;">Rp 110.000</div>
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <div>
+                            <div style="font-size: 13px; font-weight: 600;">KNIT WEAR</div>
+                            <div style="font-size: 12px; color: var(--text-dark);">1 x Rp 120.000</div>
+                        </div>
+                        <div style="font-size: 13px; font-weight: 600;">Rp 120.000</div>
+                    </div>
+                </div>
+
+                <div style="border-top: 1px dashed rgba(0,0,0,0.2); margin-bottom: 20px;"></div>
+
+                <div style="display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 13px;">
+                    <span>Subtotal</span>
+                    <span>Rp 230.000</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 13px;">
+                    <span>Shopping Ongkir</span>
+                    <span>Rp 0</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 20px; font-size: 13px; color: #E25046;">
+                    <span>Diskon Ongkir</span>
+                    <span>-Rp 30.000</span>
+                </div>
+
+                <div style="border-top: 1px solid rgba(0,0,0,0.2); margin-bottom: 20px;"></div>
+
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px;">
+                    <span style="font-size: 14px; font-weight: 600;">Total Bayar</span>
+                    <span style="font-size: 18px; font-weight: 700; color: var(--primary-yellow);">Rp 200.000</span>
+                </div>
+
+                <div style="text-align: center;">
+                    <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(38, 166, 154, 0.1); color: #26A69A; padding: 8px 16px; border-radius: 20px; font-size: 12px; font-weight: 600;">
+                        <i data-feather="check-circle" style="width: 16px; height: 16px;"></i>
+                        LUNAS
+                    </div>
+                </div>
+            </div>
+            
+            <button onclick="window.print()" class="btn-primary" style="margin-top: 24px; display: flex; align-items: center; justify-content: center; gap: 8px;">
+                <i data-feather="download" style="width: 18px; height: 18px;"></i>
+                UNDUH INVOICE
+            </button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>

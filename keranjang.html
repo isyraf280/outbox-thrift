@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keranjang Belanja - Outbox Thrift</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <div class="page-header-alt">
+            <button class="back-btn" onclick="window.location.href='index.html'">
+                <i data-feather="arrow-left"></i>
+            </button>
+            <h1>KERANJANG BELANJA (3)</h1>
+            <div class="header-icon">
+                <i data-feather="shopping-cart"></i>
+            </div>
+        </div>
+
+        <!-- Cart Items -->
+        <div class="cart-items">
+            <!-- Item 1 -->
+            <div class="cart-item">
+                <div class="cart-item-img">
+                    <img src="assets/knitwear.png" alt="Sweater Rajut">
+                </div>
+                <div class="cart-item-details">
+                    <div class="cart-item-header">
+                        <div class="cart-item-title">SWEATER RAJUT</div>
+                        <button class="cart-item-delete">
+                            <i data-feather="trash-2" style="width: 14px; height: 14px;"></i>
+                        </button>
+                    </div>
+                    <div class="cart-item-size">L</div>
+                    <div class="cart-item-bottom">
+                        <div class="cart-item-price">Rp. 135.000</div>
+                        <div class="qty-control">
+                            <button class="qty-btn minus">-</button>
+                            <input type="text" class="qty-input" value="1" readonly>
+                            <button class="qty-btn plus">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="cart-item">
+                <div class="cart-item-img">
+                    <img src="assets/jacket1.png" alt="Jaket Crop Hitam">
+                </div>
+                <div class="cart-item-details">
+                    <div class="cart-item-header">
+                        <div class="cart-item-title">JAKET CROP HITAM</div>
+                        <button class="cart-item-delete">
+                            <i data-feather="trash-2" style="width: 14px; height: 14px;"></i>
+                        </button>
+                    </div>
+                    <div class="cart-item-size">M</div>
+                    <div class="cart-item-bottom">
+                        <div class="cart-item-price">Rp. 150.000</div>
+                        <div class="qty-control">
+                            <button class="qty-btn minus">-</button>
+                            <input type="text" class="qty-input" value="1" readonly>
+                            <button class="qty-btn plus">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="cart-item">
+                <div class="cart-item-img">
+                    <img src="assets/jacket2.png" alt="Knitwear Abu Crop">
+                </div>
+                <div class="cart-item-details">
+                    <div class="cart-item-header">
+                        <div class="cart-item-title">KNITWEAR ABU CROP</div>
+                        <button class="cart-item-delete">
+                            <i data-feather="trash-2" style="width: 14px; height: 14px;"></i>
+                        </button>
+                    </div>
+                    <div class="cart-item-size">M</div>
+                    <div class="cart-item-bottom">
+                        <div class="cart-item-price">Rp. 140.000</div>
+                        <div class="qty-control">
+                            <button class="qty-btn minus">-</button>
+                            <input type="text" class="qty-input" value="1" readonly>
+                            <button class="qty-btn plus">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Summary -->
+        <div class="cart-summary">
+            <div class="summary-row">
+                <div class="label">Subtotal (3 barang):</div>
+                <div class="value">Rp. 425.000</div>
+            </div>
+            <div class="summary-row">
+                <div class="label">Estimasi Ongkir:</div>
+                <div class="value">Rp. 8.000</div>
+            </div>
+            <div class="summary-row total">
+                <div class="label">Total:</div>
+                <div class="value">Rp. 433.000</div>
+            </div>
+            <a href="pengiriman.html" class="btn-primary">LANJUT KE PEMBAYARAN</a>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
